@@ -1,0 +1,5 @@
+[run]
+source = bowling_alley
+
+[report]
+show_missing = True

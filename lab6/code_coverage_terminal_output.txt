@@ -1,0 +1,58 @@
+$ cd lab6
+$ coverage run --source=bowling_alley -m pytest CodeCoverageTest_PES1UG25AM813_bowling_alley.py -v
+============================= test session starts ==============================
+platform darwin -- Python 3.13.9, pytest-8.4.2, pluggy-1.5.0 -- /opt/anaconda3/bin/python3.13
+cachedir: .pytest_cache
+rootdir: /private/tmp/LAB1_AM813_SE/lab6
+plugins: langsmith-0.14.11, cov-7.1.0, anyio-4.10.0
+collected 40 items
+
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_weekday_no_extras PASSED [  2%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_weekend_no_extras PASSED [  5%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_shoe_rentals_added PASSED [  7%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_players_over_4_surcharge PASSED [ 10%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_players_over_4_with_shoes PASSED [ 12%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_league_member_discount PASSED [ 15%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_league_member_with_surcharge_and_shoes PASSED [ 17%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_weekend_league_member PASSED [ 20%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_minimum_players_and_games PASSED [ 22%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_maximum_players_boundary_4 PASSED [ 25%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_players_exactly_5 PASSED [ 27%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_players_exactly_6 PASSED [ 30%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_max_shoe_rentals_equals_players PASSED [ 32%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostBasic::test_weekday_example_from_handout PASSED [ 35%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostErrors::test_unknown_day_type_raises PASSED [ 37%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostErrors::test_zero_games_raises PASSED [ 40%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostErrors::test_negative_games_raises PASSED [ 42%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostErrors::test_zero_players_raises PASSED [ 45%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostErrors::test_players_over_6_raises PASSED [ 47%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneCostErrors::test_shoe_rentals_exceed_players_raises PASSED [ 50%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_open_frame_from_handout PASSED [ 52%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_open_frame_zero_score PASSED [ 55%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_open_frame_max_pins PASSED [ 57%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_spare PASSED [ 60%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_spare_with_zero_bonus PASSED [ 62%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_strike PASSED [ 65%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_strike_perfect PASSED [ 67%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreBasic::test_strike_bonus_zero PASSED [ 70%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreErrors::test_negative_first_roll_raises PASSED [ 72%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreErrors::test_first_roll_over_10_raises PASSED [ 75%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreErrors::test_negative_second_roll_raises PASSED [ 77%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestFrameScoreErrors::test_frame_total_over_10_raises PASSED [ 80%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_no_free_lanes_returns_wait PASSED [ 82%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_has_kids_returns_bumper_lane PASSED [ 85%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_large_group_two_free_lanes PASSED [ 87%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_large_group_only_one_lane_wait PASSED [ 90%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_standard_group_returns_standard_lane PASSED [ 92%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_boundary_6_players_standard_lane PASSED [ 95%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_has_kids_overrides_large_group PASSED [ 97%]
+CodeCoverageTest_PES1UG25AM813_bowling_alley.py::TestLaneAssignment::test_no_lanes_beats_kids PASSED [100%]
+
+============================== 40 passed in 0.04s ==============================
+
+$ coverage report -m
+Name               Stmts   Miss  Cover   Missing
+------------------------------------------------
+bowling_alley.py      35      0   100%
+------------------------------------------------
+TOTAL                 35      0   100%
