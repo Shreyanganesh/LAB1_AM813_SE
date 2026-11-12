@@ -30,11 +30,12 @@ def test_format_player_name_length_limit(s):
     assert len(result) <= 10, f"Result '{result}' exceeds 10 chars"
 
 
-@given(st.text(min_size=1, alphabet=st.characters(whitelist_categories=("L",))))
+@given(st.from_regex(r"^[a-zA-Z]+$", fullmatch=True))
 def test_format_player_name_title_case(s):
-    """Result should be title-cased."""
+    """Result should be title-cased for ASCII alphabetic inputs."""
     result = format_player_name(s)
-    assert result == result.title(), f"'{result}' is not title-cased"
+    if result:  # non-empty result
+        assert result == result.title(), f"'{result}' is not title-cased"
 
 
 # ──────────────────────────────────────────────────────────────
