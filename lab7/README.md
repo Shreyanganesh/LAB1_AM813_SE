@@ -1,7 +1,8 @@
 # Lab 7 – Fuzz Testing with Hypothesis
 
-**Student:** Shreyang A Ganesh  
+**Student:** Shreyan Ganesh  
 **SRN:** PES1UG25AM813  
+**Section:** E  
 **Course:** Software Engineering  
 **University:** PES University
 
@@ -70,3 +71,4 @@ pytest test_processor.py -v
 
 - **Before fix:** 6 failed, 6 passed (12 total)
 - **After fix:** 12 passed, 0 failed
+
